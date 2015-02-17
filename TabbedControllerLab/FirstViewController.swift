@@ -10,9 +10,21 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var lblDayOfWeek: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let date = NSDate()
+        
+        let dayFormatter = NSDateFormatter()
+        dayFormatter.dateFormat = "EEEE"
+        let dayOfWeekString = dayFormatter.stringFromDate(date)
+        lblDayOfWeek.text = dayOfWeekString
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+        lblDate.text = dateFormatter.stringFromDate(date)
     }
 
     override func didReceiveMemoryWarning() {
