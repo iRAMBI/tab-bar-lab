@@ -128,6 +128,33 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="zor-HQ-hHo">
+            <objects>
+                <viewController id="pHw-FB-YQo" customClass="MapViewController" customModule="TabbedControllerLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sna-pb-efj"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLK-be-UPy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKl-zA-Bet">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-yP-Vbn">
+                                <rect key="frame" x="0.0" y="28" width="600" height="523"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="mxw-zY-jVF"/>
+                    <connections>
+                        <outlet property="mapview" destination="L3v-yP-Vbn" id="Ine-WF-BEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8T-hr-Ig9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="890"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -141,15 +168,17 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="pHw-FB-YQo" kind="relationship" relationship="viewControllers" id="CzL-xU-gZB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-12" y="90"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="map" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

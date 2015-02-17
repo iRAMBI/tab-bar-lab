@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1095D7721A93056A009F19F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095D7711A93056A009F19F2 /* MapViewController.swift */; };
+		1095D7741A9305AA009F19F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1095D7731A9305AA009F19F2 /* MapKit.framework */; };
+		1095D7761A9305B2009F19F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1095D7751A9305B2009F19F2 /* CoreLocation.framework */; };
 		E7BB7D5D1A92D1C300D237E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7D5C1A92D1C300D237E7 /* AppDelegate.swift */; };
 		E7BB7D5F1A92D1C300D237E7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7D5E1A92D1C300D237E7 /* FirstViewController.swift */; };
 		E7BB7D611A92D1C300D237E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7D601A92D1C300D237E7 /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1095D7711A93056A009F19F2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1095D7731A9305AA009F19F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1095D7751A9305B2009F19F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E7BB7D571A92D1C300D237E7 /* TabbedControllerLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedControllerLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BB7D5B1A92D1C300D237E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7BB7D5C1A92D1C300D237E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1095D7761A9305B2009F19F2 /* CoreLocation.framework in Frameworks */,
+				1095D7741A9305AA009F19F2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,8 @@
 		E7BB7D4E1A92D1C300D237E7 = {
 			isa = PBXGroup;
 			children = (
+				1095D7751A9305B2009F19F2 /* CoreLocation.framework */,
+				1095D7731A9305AA009F19F2 /* MapKit.framework */,
 				E7BB7D591A92D1C300D237E7 /* TabbedControllerLab */,
 				E7BB7D711A92D1C400D237E7 /* TabbedControllerLabTests */,
 				E7BB7D581A92D1C300D237E7 /* Products */,
@@ -82,6 +92,7 @@
 				E7BB7D5C1A92D1C300D237E7 /* AppDelegate.swift */,
 				E7BB7D5E1A92D1C300D237E7 /* FirstViewController.swift */,
 				E7BB7D601A92D1C300D237E7 /* SecondViewController.swift */,
+				1095D7711A93056A009F19F2 /* MapViewController.swift */,
 				E7BB7D621A92D1C300D237E7 /* Main.storyboard */,
 				E7BB7D651A92D1C300D237E7 /* Images.xcassets */,
 				E7BB7D671A92D1C300D237E7 /* LaunchScreen.xib */,
@@ -218,6 +229,7 @@
 				E7BB7D611A92D1C300D237E7 /* SecondViewController.swift in Sources */,
 				E7BB7D5D1A92D1C300D237E7 /* AppDelegate.swift in Sources */,
 				E7BB7D5F1A92D1C300D237E7 /* FirstViewController.swift in Sources */,
+				1095D7721A93056A009F19F2 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				E7BB7D7A1A92D1C400D237E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7BB7D7B1A92D1C400D237E7 /* Build configuration list for PBXNativeTarget "TabbedControllerLabTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				E7BB7D7D1A92D1C400D237E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
